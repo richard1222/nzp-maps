@@ -1,0 +1,15 @@
+{
+  "maps": [
+    {
+      "file": "ndu.zip",
+      "name": "Nacht der Untoten",
+      "author": "NZ:P Team",
+      "version": "1.0",
+      "bsp": "ndu",
+      "size": 882291,
+      "desc": "Desolate bunker located on a German airfield, stranded after a brutal plane crash surrounded by hordes of undead. Exploit mysterious forces at play and hold out against relentless waves. Der Anstieg ist jetzt. Will you fall to the overwhelming onslaught?",
+      "date": "2026-11-13",
+      "sha256": "9f79c4e010614debaab64c473f3951b0731c7655b5c09111a82835133e9c6877"
+    }
+  ]
+}
