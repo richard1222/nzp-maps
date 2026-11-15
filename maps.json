@@ -10,6 +10,45 @@
       "desc": "Desolate bunker located on a German airfield, stranded after a brutal plane crash surrounded by hordes of undead. Exploit mysterious forces at play and hold out against relentless waves. Der Anstieg ist jetzt. Will you fall to the overwhelming onslaught?",
       "date": "2026-11-13",
       "sha256": "9f79c4e010614debaab64c473f3951b0731c7655b5c09111a82835133e9c6877"
+    },
+    {
+      "file": "https://archive.org/download/kino_20251029/kino.zip",
+      "name": "Kino der Toten",
+      "author": "MotoLegacy, LexiAshe and DerpedCrusader",
+      "version": "community",
+      "bsp": "nzp_kinodertoten",
+      "size": 4339684,
+      "desc": [
+        "A restored WW2-era theatre in West Berlin.",
+        "Community map; gameplay compatibility needs testing."
+      ],
+      "sha256": "d606ef211f4920546180b270552a1410c237d472f3170cfa8a4ebc29dbc8a62e"
+    },
+    {
+      "file": "https://archive.org/download/andes_202406/andes.zip",
+      "name": "Andes",
+      "author": "vichoca9",
+      "version": "community",
+      "bsp": "andes",
+      "size": 2777320,
+      "desc": [
+        "Survive in Khuna Punku in the Andes.",
+        "Includes easter eggs and a buyable ending."
+      ],
+      "sha256": "4eef9c4dc18a5b350c4560b433dd48135a133ec94c9ae9587ab4e98cb16cd1ad"
+    },
+    {
+      "file": "https://archive.org/download/shipment_3939/shipment.zip",
+      "name": "Shipment Survival",
+      "author": "Blake-Izayoi",
+      "version": "community",
+      "bsp": "shipment",
+      "size": 13192561,
+      "desc": [
+        "The compact Modern Warfare arena rebuilt for NZP.",
+        "Four original perks and a mystery box."
+      ],
+      "sha256": "14ddd83c4f86081e588fc65122bd5f58b8ceb0aac6965e51022eb6e0dde02646"
     }
   ]
 }
