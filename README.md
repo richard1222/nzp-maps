@@ -1,19 +1,28 @@
-# nzp-maps
+# NZP PS3 community map catalog
 
-Community mirror for the map list of the Nazi Zombies Portable PS3 port
-("Vril Engine PS3", build 2.0.2-preview+ps3-1f0ac20 by daedra000).
+Replacement catalog for Nazi Zombies: Portable PS3, tested against the catalog parser in build `2.0.2-preview+ps3-1f0ac20`. The original developer repository is unavailable.
 
-The port's downloader fetches its map list from a GitHub repository that no
-longer exists, so Download Maps fails with a 404. This repo hosts a
-replacement `maps.json` plus repacked map zips. The game can be pointed at
-it without any binary patch via the `ps3_maps_url` console variable in
-`nzp/autoexec.cfg`.
+## Use it
 
-EXPERIMENTAL: the maps.json schema is being reverse-engineered from the
-game binary and runtime log feedback. The current file is a best-guess
-first candidate and may change.
+Add this line to `/dev_hdd0/game/NZPP00001/USRDIR/nzp/autoexec.cfg`, then restart NZP:
 
-Maps are repacked from files already installed on the console by the
-community; no original game assets are redistributed here beyond what the
-port itself installed. Map content belongs to its original authors
-(Nacht der Untoten: NZ:P Team).
+```cfg
+ps3_maps_url "https://raw.githubusercontent.com/richard1222/nzp-maps/refs/heads/main/maps.json"
+```
+
+Open **Download Maps** in the main menu.
+
+## Available entries
+
+- Nacht der Untoten — existing initial test entry, NZ:P Team.
+- [Kino der Toten](https://github.com/nzp-team/nzportable/discussions/708) — MotoLegacy, LexiAshe and DerpedCrusader.
+- [Andes](https://github.com/nzp-team/nzportable/discussions/772) — vichoca9 (map metadata credits Striga).
+- [Shipment Survival](https://github.com/nzp-team/nzportable/discussions/1513) — Blake-Izayoi.
+
+The three new entries point directly to downloads published by their authors. Their ZIP integrity, expected BSP files, archive paths, byte sizes and SHA-256 hashes were checked before listing. The catalog schema and absolute-URL support were verified against the installed PS3 executable. This does **not** establish PS3 download or gameplay compatibility; console testing is pending.
+
+Map content belongs to its authors. This catalog is not affiliated with or endorsed by the NZ:P Team. Existing `ndu.zip` remains from the initial test; no additional map archives are mirrored here.
+
+## Maintenance
+
+Keep `file` as the author-published ZIP URL and verify `size`, `sha256` and `bsp` after any upstream archive change. The PS3 parser accepts a `maps` array and optional name, author, version, size, description, date and thumbnail fields; descriptions may contain up to six lines. Catalog validation does not guarantee a custom map will run correctly.
